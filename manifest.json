@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "NoMoreNonsense - 廢文脫水機",
+  "version": "1.6",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage" 
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
