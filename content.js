@@ -53,8 +53,7 @@ async function getConfiguration() {
  */
 async function processAI(text, apiKey, systemPrompt) {
   const configs = [
-    { ver: "v1beta", model: "gemini-3-flash-preview" },
-    { ver: "v1beta", model: "gemini-3-flash" }
+    { ver: "v1beta", model: "gemini-3.1-flash-lite" }
   ];
   
   const finalPrompt = systemPrompt + "\n\n待處理內容：\n" + text;
